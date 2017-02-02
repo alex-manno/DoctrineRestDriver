@@ -28,19 +28,6 @@
   "autoload": {
     "psr-4": {
       "Manno\\DoctrineRestDriver\\": "src/"
-    },
-    "files": [
-      "src/Annotations/Delete.php",
-      "src/Annotations/Fetch.php",
-      "src/Annotations/Insert.php",
-      "src/Annotations/Select.php",
-      "src/Annotations/Update.php"
-    ]
-  },
-  "target-dir": "Manno/DoctrineRestDriver",
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
     }
   },
   "require": {
