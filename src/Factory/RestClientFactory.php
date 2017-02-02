@@ -18,10 +18,9 @@
 
 namespace Manno\DoctrineRestDriver\Factory;
 
-use Manno\DoctrineRestDriver\Types\RestClientOptions;
-use Manno\RestClientBundle\Services\Curl;
-use Manno\RestClientBundle\Services\CurlOptionsHandler;
-use Manno\RestClientBundle\Services\RestClient;
+use Circle\RestClientBundle\Services\Curl;
+use Circle\RestClientBundle\Services\CurlOptionsHandler;
+use Circle\RestClientBundle\Services\RestClient;
 
 /**
  * Factory for rest clients
@@ -35,7 +34,7 @@ class RestClientFactory
     /**
      * Creates a new RestClient with the given options
      *
-     * @param  array      $curlOptions
+     * @param  array $curlOptions
      * @return RestClient
      */
     public function createOne(array $curlOptions)
