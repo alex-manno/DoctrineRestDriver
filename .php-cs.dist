@@ -1,0 +1,13 @@
+<?php
+
+/** @var PhpCsFixer\ConfigInterface $config **/
+$config = include __DIR__ . '/vendor/facile/facile-coding-standard/.php_cs';
+
+$finder = PhpCsFixer\Finder::create();
+$finder->in([
+    __DIR__.'/src', // source path
+]);
+
+$config->setFinder($finder);
+
+return $config;

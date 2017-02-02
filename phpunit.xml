@@ -10,7 +10,7 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         bootstrap="./Tests/bootstrap.php"
+         bootstrap="./src/Tests/bootstrap.php"
          reportUselessTests="true"
          strict-coverage="true"
          disallow-test-output="true"
@@ -21,12 +21,12 @@
 >
 
     <php>
-        <server name="KERNEL_DIR" value="./Tests/app" />
+        <server name="KERNEL_DIR" value="./src/Tests/app" />
     </php>
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>Tests</directory>
+            <directory>src/Tests</directory>
         </testsuite>
     </testsuites>
 
@@ -34,10 +34,10 @@
         <whitelist>
             <directory>.</directory>
             <exclude>
-                <directory>Resources</directory>
-                <directory>Entity</directory>
-                <directory>Tests</directory>
-                <directory>vendor</directory>
+                <directory>src/Resources</directory>
+                <directory>src/Entity</directory>
+                <directory>src/Tests</directory>
+                <directory>src/vendor</directory>
                 <file>CircleDoctrineRestDriver.php</file>
             </exclude>
         </whitelist>
